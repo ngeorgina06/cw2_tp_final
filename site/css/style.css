@@ -53,8 +53,12 @@ h4 {
    
 }
 
-p {
+p:not(.soustitre) {
   
+}
+
+.soustitre{
+
 }
 
 .material-symbols-outlined {
