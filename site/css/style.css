@@ -21,12 +21,21 @@ html {
 Base
 ------------------------------------------------------------------ */
 .wrapper {
-    max-width: 1170px;
+    max-width: 1320px;
     margin: 0 auto;
 }
 
 body {
+    font:
+        1rem/110% "Nunito",
+        sans-serif;
+    font-optical-sizing: auto;
 
+    text-align: center;
+
+    color: #A66D45;
+    background-color:
+        #D2CC98;
 }
 
 
@@ -34,73 +43,167 @@ body {
 /*------------------------------------------------------------------
 Éléments texte
 ------------------------------------------------------------------ */
-span {
-}
-
 h1 {
-
+    font:
+        900 2.375rem/110% "Elm sans",
+        sans-serif;
+    font-optical-sizing: auto;
 }
 
 h2 {
-  
+    font:
+        400 2.375rem/110% "Elm sans",
+        sans-serif;
+    font-optical-sizing: auto;
 }
 
 h3 {
-   
+    font:
+        700 1.5rem/110% "Nunito",
+        sans-serif;
+    font-optical-sizing: auto;
 }
 
 h4 {
-   
+    font:
+        italic 1.25rem/110% "Nunito",
+        sans-serif;
+    font-optical-sizing: auto;
 }
 
-p:not(.soustitre) {
-  
-}
-
-.soustitre{
-
+p {
+    font:
+        1rem/110% "Nunito",
+        sans-serif;
+    font-optical-sizing: auto;
 }
 
 .material-symbols-outlined {
-
+    color: #FFB5A3;
 }
 
 a {
+    font:
+        1.125rem/110% "Nunito",
+        sans-serif;
+    font-optical-sizing: auto;
 
+    text-decoration: none;
 }
 
 a:hover {
+    color: #F8F8F8;
+}
 
+button {
+    font:
+        700 0.875rem/110% "Nunito",
+        sans-serif;
+    font-optical-sizing: auto;
+
+    color: #F8F8F8;
+    background-color: #D2CC98;
+
+    border-style: none;
+
+    padding: 10px 30px;
+}
+
+button:hover {
+    background-color: #A66D45;
 }
 
 /*------------------------------------------------------------------
 Mise en page des BLOCS
 ------------------------------------------------------------------ */
 
+/* -------------------------------------------------------------------------- */
+/*                               BLOCS GÉNÉRAUX                               */
+/* -------------------------------------------------------------------------- */
 /*------------------------------------------Header-----------------------------------------*/
 
-.header {
-  
-}
-/*------------------------------------------Hero-----------------------------------------*/
-.hero {
 
-}
+.header .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
 
-.hero .wrapper {
-
+    padding: 17px 0px;
 }
 
+.menu-gauche {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 
-/*------------------------------------------Page Contact-----------------------------------------*/
+    list-style-type: none;
+}
 
+.menu-gauche li>a {
+    color: #A66D45;
+}
 
-/*------------------------------------------Page Projet-----------------------------------------*/
+.menu-gauche li>a:hover {
+    color: #F8F8F8;
+}
 
+.menu-droit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+
+    list-style-type: none;
+
+    padding: 0px;
+}
+
+.menu-droit li>a {
+    color: #A66D45;
+}
+
+.menu-droit li>a:hover {
+    color: #F8F8F8;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 16px;
+    padding-right: 24px;
+}
+
+.logo>a {
+    font:
+        300 2.25rem/110% "chewy",
+        "system ui";
+    color: #A66D45;
+}
 
 /*------------------------------------------Footer-----------------------------------------*/
-.footer {
-}
+.footer {}
 
-footer .wrapper {
-}
+footer .wrapper {}
+
+/* -------------------------------------------------------------------------- */
+/*                                 INDEX.HTML                                 */
+/* -------------------------------------------------------------------------- */
+/*------------------------------------------Hero-----------------------------------------*/
+.hero {}
+
+.hero .wrapper {}
+
+/*------------------------------------------Inscription-----------------------------------------*/
+/*------------------------------------------Équipe-----------------------------------------*/
+/*------------------------------------------Vêtements-----------------------------------------*/
+/*------------------------------------------Contact-----------------------------------------*/
+
+/* -------------------------------------------------------------------------- */
+/*                             LISTE-ARTICLES,HTML                            */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                ARTICLE.HTML                                */
+/* -------------------------------------------------------------------------- */
