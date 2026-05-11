@@ -59,7 +59,7 @@ h2 {
 
 h3 {
     font:
-        700 1.5rem/110% "Nunito",
+        300 1.5rem/110% "Nunito",
         sans-serif;
     font-optical-sizing: auto;
 }
@@ -184,9 +184,35 @@ Mise en page des BLOCS
 }
 
 /*------------------------------------------Footer-----------------------------------------*/
-.footer {}
 
-footer .wrapper {}
+footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 50px 0px;
+}
+
+.footer h3 {
+    color: #F8F8F8;
+}
+
+.footer-icon {
+    width: 43px;
+    height: 43px;
+
+    border-style: solid;
+    border-color: white;
+    border-radius: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icon span{
+    color: white;
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                 INDEX.HTML                                 */
