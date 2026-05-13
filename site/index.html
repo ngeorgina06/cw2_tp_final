@@ -77,14 +77,18 @@
     <!--                                  HERO                                   -->
     <!-- ----------------------------------------------------------------------- -->
     <section class="hero">
-        <div class="wrapper">
+        <div class="hero-wrapper">
 
-            <!-- Titre -->
-            <h1>Une mode avec un chat-ractère</h1>
+            <!-- Boite de texte -->
+            <div class="hero-boite">
+                <!-- Titre -->
+                <h1>Une mode avec un chat-ractère</h1>
 
-            <!-- Sous-titre -->
-            <p class="soustitre">Chez Chat beauTIM, découvrez une multitude de vêtements fabriqués avec précision et
-                chat-mour. Vous et nos vêtements sont félins pour l’autre.</p>
+                <!-- Sous-titre -->
+                <p class="hero-ST">Chez Chat beauTIM, découvrez une multitude de vêtements fabriqués avec précision et
+                    chat-mour. Vous et nos vêtements sont félins pour l’autre.</p>
+            </div>
+
         </div>
     </section>
 
@@ -95,11 +99,14 @@
         <div class="wrapper">
 
             <!-- Titre -->
-            <h2>ne manquez pas nos nouvelles tendances</h2>
+            <h2>NE MANQUEZ PAS NOS NOUVELLES TENDANCES</h2>
 
             <!-- Sous-titre -->
-            <p class="soustitre">Chaque semaine, nos créateurs passionnés nous font part de nouvelles créations.
-                Inscrivez-vous dès maintenant pour rester à l’affût.</p>
+            <div class="inscription-par">
+                <p class="inscription-ST">Chaque semaine, nos créateurs passionnés nous font part de nouvelles
+                    créations.
+                    Inscrivez-vous dès maintenant pour rester à l’affût.</p>
+            </div>
 
             <!-- Bouton inscription -->
             <button>Inscrivez-vous</button>
@@ -113,38 +120,49 @@
         <div class="wrapper">
 
             <!--  Titre-->
-            <h2>nos ch-réateurs</h2>
+            <h2>NOS CH-RÉATEURS</h2>
 
             <!-- Sous-titre -->
-            <p class="soustitre">Ils ne vivent pas dans des chat-tôt, mais leurs lignes sont d’une essence presque
-                royale. Chat ch’est chûr.</p>
+            <div class="equipe-par">
+                <p class="equipe-ST">Ils ne vivent pas dans des chat-tôt, mais leurs lignes sont d’une essence presque
+                    royale. Chat ch’est chûr.</p>
+            </div>
 
             <!-- Carte des créateurs -->
             <div class="cards">
 
                 <!-- Carte créatrice: Yami -->
-                <div class="card">
+                <article class="card">
                     <img src="images/yami.jpg" alt="Yami">
-                    <h3>YAMI
-                        LAPRINCESSE</h3>
-                    <p class="soustitre">Technicienne d’ajustement de mode</p>
-                </div>
+                    <div class="card-txt">
+                        <h3>YAMI
+                            LAPRINCESSE</h3>
+                        <p>Technicienne d’ajustement de mode</p>
+                    </div>
+
+                </article>
 
                 <!-- Carte créateur: Nino -->
-                <div class="card">
+                <article class="card">
                     <img src="images/nino.jpg" alt="Nino">
-                    <h3>NINO
-                        LABALEINE</h3>
-                    <p class="soustitre">Assistant en design de mode</p>
-                </div>
+                    <div class="card-txt">
+                        <h3>NINO
+                            LABALEINE</h3>
+                        <p>Assistant en design de mode</p>
+                    </div>
 
-                <!-- Carte créatrice: Akeelag -->
-                <div class="card">
+                </article>
+
+                <!-- Carte créatrice: Akeelah -->
+                <article class="card">
                     <img src="images/akeelah.jpg" alt="Akeelah">
-                    <h3>AKEELAH
-                        LABELLE</h3>
-                    <p class="soustitre">Designer sr.</p>
-                </div>
+                    <div class="card-txt">
+                        <h3>AKEELAH
+                            LABELLE</h3>
+                        <p>Designer sr.</p>
+                    </div>
+
+                </article>
             </div>
         </div>
     </section>
@@ -159,17 +177,25 @@
             <h2>NOS VÊTEMENTS</h2>
 
             <!-- Sous-titre -->
-            <p class="soustitre">
+            <p class="produits-ST">
                 Pour un look qu vous fait chentir bien, magasinez nos vêtements dès maintenant.
             </p>
 
             <!-- Menu filtre-->
-            <nav class="filtre">
-                <a class="btn-filtre">tous</a>
-                <a class="btn-filtre">hiver</a>
-                <a class="btn-filtre">automne</a>
-                <a class="btn-filtre">été</a>
-            </nav>
+            <div class="filtre">
+                <div class="btn-filtre">
+                    <p>tous</p>
+                </div>
+                <div class="btn-filtre">
+                    <p>hiver</p>
+                </div>
+                <div class="btn-filtre">
+                    <p>automne</p>
+                </div>
+                <div class="btn-filtre">
+                    <p>été</p>
+                </div>
+            </div>
 
             <!-- Grille des articles -->
             <div class="grille">
@@ -178,7 +204,8 @@
                 <div class="grille-element">
                     <a href="article.html" class="article"><img src="images/tendance01.jpg" alt="Style bureau"></a>
                     <h3>Style bureau</h3>
-                    <p class="soustitre"></p>
+                    <p class="soustitre">Chemise chic pour le bureau
+                        25.99$</p>
                 </div>
 
                 <!-- Article 02 -->
@@ -239,6 +266,9 @@
                 </div>
             </div>
 
+            <span class="material-symbols-outlined">
+                add_2
+            </span>
             <!-- Bouton voir tous les vêtements -->
             <button>Voir tous les VÊTEMENTS</button>
         </div>
