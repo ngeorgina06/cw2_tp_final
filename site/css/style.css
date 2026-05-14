@@ -403,40 +403,54 @@ footer .wrapper {
 
 /* PRODUITS HOVER EFFECT */
 .conteneur-hover {
-    border: transparent solid 9px;
+    position: relative;
+    width: 50%;
+}
 
-    width: fit-content;
-    height: fit-content;
-
-    opacity: 1;
+.conteneur-hover img {
     display: block;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
 
-.conteneur-hover:hover {
-    border: #D2CC98 solid 9px;
-}
-
-.conteneur-hover:hover img {
-    opacity: 0.2;
+    height: 275px;
+    width: 275px;
 }
 
 .hover-middle {
-    transition: .5s ease;
-    opacity: 0;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
-    font-size: 9rem;
+    height: 275px;
+    width: 275px;
+
+    opacity: 0;
+    transition: .5s ease;
+
+    background-color: rgba(222, 140, 140, 0.2);
 }
 
 .conteneur-hover:hover .hover-middle {
     opacity: 1;
+    cursor: pointer;
+    border: #D2CC98 solid 9px;
+}
+
+.hover-middle span {
+    color: #FFB5A3;
+
+    font-weight: bold;
+    font-size: 9rem;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    text-align: center;
 }
 
 /*------------------------------------------Contact-----------------------------------------*/
