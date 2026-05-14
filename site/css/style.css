@@ -22,8 +22,7 @@ Base
 ------------------------------------------------------------------ */
 .wrapper {
     max-width: 1320px;
-
-    padding: 50px 60px;
+    padding: 50px 0;
     margin: 0 auto;
 }
 
@@ -285,6 +284,10 @@ footer .wrapper {
     padding-bottom: 58px;
 }
 
+.inscription .wrapper button {
+    font-weight: normal;
+}
+
 /*------------------------------------------Équipe-----------------------------------------*/
 .equipe {
     background: #F3EAD6 no-repeat top center;
@@ -337,6 +340,17 @@ footer .wrapper {
     color: #504545;
 }
 
+.produits-par {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produits-ST {
+    max-width: 562px;
+
+}
+
 .filtre {
     display: flex;
     gap: 50px;
@@ -373,10 +387,141 @@ footer .wrapper {
     padding: 50px 0px 44px;
 }
 
+.produits-button {
+    display: flex;
+    justify-content: center;
+}
+
+.produits-liste {
+    background-color: #D2CC98;
+    color: #504545;
+    margin: 0;
+    padding: 10px 30px;
+
+    font-size: 0.875rem;
+}
+
+/* PRODUITS HOVER EFFECT */
+.conteneur-hover {
+    border: transparent solid 9px;
+
+    width: fit-content;
+    height: fit-content;
+
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.conteneur-hover:hover {
+    border: #D2CC98 solid 9px;
+}
+
+.conteneur-hover:hover img {
+    opacity: 0.2;
+}
+
+.hover-middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+
+    font-size: 9rem;
+}
+
+.conteneur-hover:hover .hover-middle {
+    opacity: 1;
+}
+
 /*------------------------------------------Contact-----------------------------------------*/
 .contact {
-    background: #A66D45 no-repeat top center;
+    background: #A66D45;
     background-size: cover;
+    padding: 50px 60px;
+}
+
+.contact .wrapper {
+    background-color: #F3EAD6;
+
+    margin: 0;
+}
+
+.contact .wrapper h2 {
+    padding: 0;
+}
+
+.contact-grid {
+    display: grid;
+    gap: 80px;
+    grid-template-columns: repeat(2, 1fr);
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px;
+}
+
+.contact-grid img {
+    width: 500px;
+    height: 500px;
+    border: #D2CC98 solid 5px;
+}
+
+.contact-txt {
+    text-align: left;
+}
+
+.liens {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+
+.liens a {
+    color: #A66D45;
+    font-size: 1.5rem;
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 100%;
+    border: #A66D45 solid 1px;
+}
+
+.liens a:hover {
+    color: #FFB5A3;
+    border-color: #FFB5A3;
+}
+
+.bouton-mailto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-BTN {
+    max-width: 243px;
+
+    background-color: transparent;
+    color: #FFB5A3;
+
+    font-size: 0.875rem;
+
+    border: #D2CC98 solid 1px;
+
+    margin: 0;
+    padding: 15px 40px;
 }
 
 /* -------------------------------------------------------------------------- */
